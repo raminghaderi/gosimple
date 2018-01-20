@@ -4,9 +4,6 @@
     <title>Place Autocomplete</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -86,38 +83,10 @@
         font-weight: 500;
         padding: 6px 12px;
       }
-        
-    .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
-    .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
-        
-        .map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
     </style>
   </head>
   <body>
-    <div id="pac-card">
+    <div class="pac-card" id="pac-card">
       <div>
         <div id="title">
           Autocomplete search
@@ -151,7 +120,6 @@
       <span id="place-name"  class="title"></span><br>
       <span id="place-address"></span>
     </div>
-
 
     <script>
       // This example requires the Places library. Include the libraries=places
@@ -242,7 +210,7 @@
             });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADanvW4Tf5Gw5bBrIZSjxRNpEja6ihdzM&libraries=places&callback=initMap"async defer></script>
-      
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADanvW4Tf5Gw5bBrIZSjxRNpEja6ihdzM&libraries=places&callback=initMap"
+        async defer></script>
   </body>
 </html>
