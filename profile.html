@@ -20,10 +20,29 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1><a href="user_home_page.html">GoSimple</a></h1>
-						
-					</header>
+					
+            <header id="header">
+                <h1><a href="user_home_page.html">GoSimple</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="user_home_page.html">Home</a></li>
+                                    <li><a href="post_ride.html">Post Ride</a></li>
+                                    <li><a href="pick_ride.html">Pick Ride</a></li>
+                                    <li><a href="vouchers.html">Vouchers</a></li>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="login.html">Log Out</a></li>
+                                    <li>Your Points: 25 <br><br/><button type="button" onclick="window.location.href = 'redeem_points.html';">Reedem Your Points</button></li>
+                                </ul> 
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+					
 
 				<!-- Main -->
 					<article id="main">
@@ -52,12 +71,12 @@
 												<input type="text" name="demo-name" id="demo-name" value="+491783449456" placeholder="Telephone Number" />
 											</div>
                                             <div class="12u$">
-												<textarea name="demo-message" id="demo-message" placeholder="Address" rows="6" value="Vettersstraße 72, 09126 Chemnitz"></textarea>
+												<textarea name="demo-message" id="demo-message" placeholder="Address" rows="6" >Vettersstraße 72, 09126 Chemnitz</textarea>
 											</div>
 											
 										  <div class="12u$">
 												<ul class="actions">
-													<li><a href="#" class="button">Save Changes</a></li>
+													<li><a href="user_home_page.html" class="button">Save Changes</a></li>
 												</ul>
 											</div>
 										</div>
