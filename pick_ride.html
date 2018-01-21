@@ -31,19 +31,21 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
             <!-- Header -->
             <header id="header">
-                <h1><a href="#">GoSimple</a></h1>
+                <h1><a href="user_home_page.html">GoSimple</a></h1>
                 <nav id="nav">
                     <ul>
                         <li class="special">
                             <a href="#menu" class="menuToggle"><span>Menu</span></a>
                             <div id="menu">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="generic.html">Generic</a></li>
-                                    <li><a href="elements.html">Elements</a></li>
+                                    <li><a href="user_home_page.html">Home</a></li>
+                                    <li><a href="post_ride.html">Post Ride</a></li>
+                                    <li><a href="pick_ride.html">Pick Ride</a></li>
+                                    <li><a href="vouchers.html">Vouchers</a></li>
+                                    <li><a href="profile.html">Profile</a></li>
                                     <li><a href="login.html">Log Out</a></li>
                                     <li>Your Points: 25 <br><br/><button type="button" onclick="window.location.href = 'redeem_points.html';">Reedem Your Points</button></li>
-                                </ul>  
+                                </ul>   
                             </div>
                         </li>
                     </ul>
@@ -163,6 +165,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                         console.log(place.geometry.location.lat(), place.geometry.location.lng());
                     }
+                    
+                    
+
 
                 });
 
@@ -175,7 +180,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         ['Maroubra Beach', 48.2057939, 11.6083124, 1]
                 ];
 
-                var marker, i;
+                var marker1, i;
 
                 for (i = 0; i < locations.length; i++) {  
                     marker1 = new google.maps.Marker({
@@ -183,13 +188,13 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         map: map
                     });
                     marker1.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
-                    google.maps.event.addListener(marker1, 'click', (function(marker, i) {
+                    google.maps.event.addListener(marker1, 'click', (function(marker1, i) {
                         return function() {
                             infowindow.setContent(locations[i][0]);
                             infowindow.open(map, marker1);
                         }
                     })(marker1, i));
-                }              
+                }   
                 
 
 
